@@ -3,9 +3,7 @@
     single controller function to handle it: */
 
 // TODO: What function do we call to activate page.js?
-page('/', articles);
+// DONE
+page('/', articleController.reveal);
+page('/about', aboutController.reveal);
 page();
-
-function articles() {
-  articleController.reveal();
-}
