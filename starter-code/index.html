@@ -84,13 +84,25 @@
           </ul>
         </section>
       </section>
+      <section id="admin" class="clearfix tab-content">
+        <h1>Blog Stats</h1>
+        <section id="blog-stats">
+          <dt>Total articles:</dt> <dd class="articles"></dd>
+          <dt>Total words:</dt> <dd class="words"></dd>
+          <h2>Author Stats</h2>
+          <p><em>Details on who is writing, and how much writing they are doing...</em></p>
+          <ul class="author-stats">
+          </ul>
+        </section>
+      </section>
     </main>
     <footer>
       &copy; 2016 Code Fellows | Static Blog | Happy Ipsum!
     </footer>
     <!-- Vendor Files -->
     <!-- TODO: link to our new page.js library within vendors-->
-
+    <!-- DONE -->
+    <script src="vendor/scripts/page.js"></script>
     <script src="vendor/scripts/jquery-2.1.4.js"></script>
     <script src="vendor/scripts/handlebars.js"></script>
     <script src="vendor/scripts/marked.js"></script>
@@ -100,7 +112,12 @@
     <script src="scripts/models/article.js"></script>
     <!-- View Files -->
     <script src="scripts/views/articleView.js"></script>
+    <script src="scripts/controllers/aboutController.js"></script>
+    <script src="scripts/controllers/articleController.js"></script>
+    <script src="scripts/controllers/adminController.js"></script>
+    <script src="scripts/controllers/routes.js"></script>
     <!-- TODO: place here ALL new Controller Files -->
+    <!-- DONE -->
     <!-- Controller Files -->
   </body>
 </html>
